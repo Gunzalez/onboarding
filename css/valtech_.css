@@ -1,0 +1,98 @@
+body {
+	background: #f0f0f0;
+	font-weight: normal;
+}
+
+.page-title {
+	text-align: center;
+	margin: 0;
+	padding: 30px 0 20px 0;
+	font-weight: 100;
+	font-size: 2rem;
+}
+
+.main-content p {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+legend {
+	font-size: 1.2rem;
+}
+
+.help {
+	text-align: center;
+}
+
+.form .row {
+	margin-bottom: 20px;
+}
+
+.form .row.padded-row {
+	margin-bottom: 40px;
+}
+
+.button-row {
+	text-align: center;
+}
+
+input, button, .ui-corner-all {
+	border-radius: 0 !important;
+}
+
+.row input {
+	padding: 0.7em 0.6em !important;
+}
+
+.row input.search {
+	padding-left: 2em !important;
+}
+
+
+.intro {
+	padding: 0 30px;
+	text-align: center;
+}
+
+/* framework overrides */
+.ui-select .ui-btn>span:not(.ui-li-count) {
+    text-align: left;
+}
+
+.ui-input-search:after {
+    left: 0.6em !important;
+}
+
+.ui-naked-btn {
+    background: transparent !important;
+    border: none !important;
+}
+
+.ui-naked-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.ui-input-search,
+.vl-input-text {
+    border: none !important;
+    border-bottom: 1px solid #c6c6c6 !important;
+    box-shadow: none !important;
+}
+
+.ui-select a,
+.ui-listview a {
+    box-shadow: none !important;
+    font-weight: 100 !important;
+}
+
+.ui-shadow {
+    box-shadow: none !important;
+}
+
+.ui-overlay-a, 
+.ui-page-theme-a, 
+.ui-page-theme-a 
+.ui-panel-wrapper {
+	background: #f0f0f0;	
+}
