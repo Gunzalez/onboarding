@@ -1,2 +1,2 @@
 # onboarding
-A prototype web mobile app for new joiners to a firm.
+A prototype web app for mobile phones, to help new joiners to a firm.
