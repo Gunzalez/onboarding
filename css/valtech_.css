@@ -123,12 +123,13 @@ html .ui-filterable.ui-listview {
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    margin:-10px 0 0 2px;
+    margin:-12px 0 0 2px;
     text-decoration:none;
 }
 
 .bios {
     font-weight: 100;
+    color: #111;
 }
 
 .bio.remove {
@@ -144,7 +145,7 @@ html .ui-filterable.ui-listview {
     height: 220px;
     text-align: center;
     font-size: 2rem;
-    padding-top: 40px;
+    padding-top: 50px;
     box-sizing: border-box;
 }
 
@@ -155,4 +156,9 @@ html .ui-filterable.ui-listview {
 
 .ui-btn, input {
     font-family: 'Fjalla One', sans-serif !important;
+}
+
+.panel a {
+    text-transform: uppercase !important;
+    font-size: 1.1em !important;
 }
