@@ -1,6 +1,11 @@
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
 body {
 	background: #f0f0f0;
 	font-weight: normal;
+    font-family: 'Fjalla One', sans-serif !important;
+    line-height: 150%;
 }
 
 .page-title {
@@ -122,6 +127,10 @@ html .ui-filterable.ui-listview {
     text-decoration:none;
 }
 
+.bios {
+    font-weight: 100;
+}
+
 .bio.remove {
     display: none;
 }
@@ -142,4 +151,8 @@ html .ui-filterable.ui-listview {
 .footer .ui-btn.ui-btn-active {
     outline: none !important;
     box-shadow: none !important;
+}
+
+.ui-btn, input {
+    font-family: 'Fjalla One', sans-serif !important;
 }
