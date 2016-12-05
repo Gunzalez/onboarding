@@ -73,13 +73,16 @@
 <!-- Start of Landing page -->
 <div data-role="page" id="landing">
     <div data-role="panel" id="landingPanel" data-position="right" data-display="overlay">
-        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+        </ul>
     </div>
 
     <div data-role="header" data-position="fixed">
         <h1>&nbsp;</h1>
         <a href="#landingPanel" data-dismissible="false"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -111,7 +114,11 @@
 <!-- Start of People page -->
 <div data-role="page" id="people">
     <div data-role="panel" id="peoplePanel" data-position="right" data-display="overlay">
-        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+        </ul>
     </div>
 
     <div data-role="header" data-position="fixed">
@@ -121,7 +128,7 @@
 
         <h1>People_</h1>
         <a href="#peoplePanel"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
            data-rel="back">Menu</a>
     </div>
 
@@ -225,7 +232,11 @@
 <!-- Start of Results page -->
 <div data-role="page" id="results">
     <div data-role="panel" id="resultsPanel" data-position="right" data-display="overlay">
-        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+        </ul>
     </div>
 
     <div data-role="header" data-position="fixed">
@@ -235,7 +246,7 @@
 
         <h1>People_</h1>
         <a href="#resultsPanel"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
            data-rel="back">Menu</a>
     </div>
 
@@ -247,7 +258,7 @@
 
         </div>
         <form class="ui-filterable filter-icon">
-            <input id="listOfNames" placeholder="Filter names..." data-type="search" class="ui-icon-gear ui-nodisc-icon" autocomplete="off" />
+            <input id="listOfNames" placeholder="Filter names..." data-type="search" autocomplete="off" />
         </form>
         <ul data-role="listview" id="aListOfNames" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-input="#listOfNames">
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
@@ -276,7 +287,11 @@
 <!-- Start of Results page -->
 <div data-role="page" id="person">
     <div data-role="panel" id="personPanel" data-position="right" data-display="overlay">
-        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+        </ul>
     </div>
 
     <div data-role="header" data-position="fixed">
@@ -349,7 +364,11 @@
 <!-- Start of Quick tools page -->
 <div data-role="page" id="quick-tools">
     <div data-role="panel" id="quick-toolsPanel" data-position="right" data-display="overlay">
-        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+        </ul>
     </div>
 
     <div data-role="header" data-position="fixed">
@@ -359,7 +378,7 @@
 
         <h1>Quick tools_</h1>
         <a href="#quick-toolsPanel" data-dismissible="false"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -383,7 +402,7 @@
             </li>
             <li>
                 <a href="#active-directory" class="ui-nodisc-icon ui-alt-icon">
-                    <h3>Active Directory</h3>
+                    <h3>Active Directory / Intranet</h3>
                     <span>Valtech AD logins</span>
                 </a>
             </li>
@@ -415,7 +434,11 @@
 <!-- Start of Quick links page -->
 <div data-role="page" id="active-directory">
     <div data-role="panel" id="active-directoryPanel" data-position="right" data-display="overlay">
-        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+        </ul>
     </div>
 
     <div data-role="header" data-position="fixed">
@@ -425,7 +448,7 @@
 
         <h1>Quick tools_</h1>
         <a href="#active-directoryPanel" data-dismissible="false"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -454,6 +477,43 @@
                 </a>
             </li>
         </ul>
+
+    </div>
+    <!-- /content -->
+
+    <!--<div data-role="footer" data-position="fixed">-->
+    <!--<p class="help">-->
+    <!--<a href="index.html">Log out</a>-->
+    <!--</p>-->
+    <!--</div>-->
+</div>
+<!-- /page -->
+
+<!-- Start of Preferences page -->
+<div data-role="page" id="preferences">
+    <div data-role="panel" id="preferencesPanel" data-position="right" data-display="overlay">
+        <ul data-role="listview">
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+        </ul>
+    </div>
+
+    <div data-role="header" data-position="fixed">
+        <a href="#"
+           class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Back</a>
+        
+        <h1>&nbsp;</h1>
+        <a href="#preferencesPanel" data-dismissible="false"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+    </div>
+
+    <div role="main" class="ui-content main-content">
+        <h2 class="page-title">Preferences_</h2>
+
+        <div class="intro">
+            <p>Nothing to see here, move along. I said go!</p>
+        </div>
 
     </div>
     <!-- /content -->
