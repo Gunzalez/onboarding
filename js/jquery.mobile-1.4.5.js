@@ -9694,7 +9694,7 @@ $.widget( "mobile.flipswitch", $.extend({
 
 		clearButton: function() {
 			return $( "<a href='#' tabindex='-1' aria-hidden='true' " +
-				"class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all'>" +
+				"class='ui-input-clear ui-btn ui-icon-delete ui-nodisc-icon ui-alt-icon ui-btn-icon-notext ui-corner-all'>" +
 				"</a>" )
 					.attr( "title", this.options.clearBtnText )
 					.text( this.options.clearBtnText );
@@ -14277,7 +14277,6 @@ $.widget( "mobile.filterable", $.mobile.filterable, {
 						selector.blur();
 					})
 					.insertBefore( this.element );
-                console.log(this);
 				if ( $.mobile.textinput ) {
 					if ( this.options.filterTheme != null ) {
 						textinputOpts[ "theme" ] = opts.filterTheme;

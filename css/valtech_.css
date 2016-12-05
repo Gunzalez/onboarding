@@ -47,7 +47,7 @@ input, button, .ui-corner-all {
 
 .ui-input-search input,
 .row input.search {
-	padding-left: 2em !important;
+	padding-left: 2.1em !important;
 }
 
 
@@ -110,4 +110,14 @@ input, button, .ui-corner-all {
 html .ui-filterable+.ui-listview,
 html .ui-filterable.ui-listview {
     margin-top: 0;
+}
+
+.filter-icon .ui-input-search:after {
+    background-image: none;
+    content: "\f0b0" !important;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin:-10px 0 0 2px;
+    text-decoration:none;
 }

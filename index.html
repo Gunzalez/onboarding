@@ -3,8 +3,8 @@
 <head>
     <title>Valtech onBoarding_</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
     <link rel="stylesheet" href="css/valtech_.css"/>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
@@ -246,7 +246,10 @@
             <p>Use the filter below or <a href="#" data-rel="back">edit</a> you search</p>
 
         </div>
-        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-icon="filter">
+        <form class="ui-filterable filter-icon">
+            <input id="listOfNames" placeholder="Filter names..." data-type="search" class="ui-icon-gear ui-nodisc-icon">
+        </form>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-input="#listOfNames">
             <li><a href="#staff1" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
             <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Rebeca Martins</a></li>
             <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Mark Wahlberg</a></li>
