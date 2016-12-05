@@ -121,3 +121,25 @@ html .ui-filterable.ui-listview {
     margin:-10px 0 0 2px;
     text-decoration:none;
 }
+
+.bio.remove {
+    display: none;
+}
+
+.bio.centered {
+    text-align: center;
+}
+
+.photo {
+    background: #E7E7E7;
+    height: 220px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.footer .ui-btn.ui-btn-active {
+    outline: none !important;
+    box-shadow: none !important;
+}

@@ -86,7 +86,7 @@
         <h2 class="page-title">Valtech_</h2>
 
         <div class="intro">
-            <p>Search people, projects, processes and tools. Find all you need to know about Valtech.</p>
+            <p>Search people, projects, processes and tools. Find out all you need to know about Valtech.</p>
         </div>
 
         <ul data-role="listview" data-inset="true">
@@ -243,7 +243,7 @@
         <div class="intro">
             <p>Results for <span id="resultsFromPeople"><strong>no terms</strong></span></p>
 
-            <p>Use the filter below or <a href="#" data-rel="back">edit</a> you search</p>
+            <p><a href="#" data-rel="back">Refine search</a></p>
 
         </div>
         <form class="ui-filterable filter-icon">
@@ -251,12 +251,16 @@
         </form>
         <ul data-role="listview" id="aListOfNames" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-input="#listOfNames">
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
-            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Rebeca Martins</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Rebecca Martins</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Christoph Waltz</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Wahlberg</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Andrew Morgan</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Will Rogers</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Susan Foil</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Tizzy Jones</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Jim Morrison</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Samuel L. Jackson</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Bruce Lee</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Chris Dal-Din</a></li>
         </ul>
     </div>
@@ -286,15 +290,16 @@
            data-rel="back">Menu</a>
     </div>
 
+    <div class="photo">
+        {{ PHOTO }}
+    </div>
     <div role="main" class="ui-content main-content">
-        <h2 class="page-title"><br />{{ PHOTO }}<br /><br /><br /></h2>
-        <div class="intro">
-
-            <!--<div id="one">-->
-                <!--<p>Hi guys, my name is <span class="personName">Mr Nobody</span>, I'm such a great person, I am really kind, honest, funny and generous. Also, I am super intelligent and a wizard when it comes to scrabble or bingo. I'm frightfully smart, a good dresser and quite the dancer too. I love pets, I recycle and the force is strong with me.</p>-->
-                <!--<p>My greatest personality trait is modesty, I am the most modest person I know.</p>-->
-            <!--</div>-->
-            <div id="two">
+        <div class="bios">
+            <div id="one" class="bio">
+                <p>Hi guys, my name is <span class="personName">Mr Nobody</span>, I'm such a great person, I am really kind, honest, funny and generous. Also, I am super intelligent and a wizard when it comes to scrabble or bingo. I'm frightfully smart, a good dresser and quite the dancer too. I love pets, I recycle and the force is strong with me.</p>
+                <p>My greatest personality trait is modesty, I am the most modest person I know.</p>
+            </div>
+            <div id="two" class="bio centered">
                 <p>P-P-A-P</p>
                 <p>I have a pen, I have an apple<br />
                     Uh! Apple-Pen!</p>
@@ -304,17 +309,40 @@
                     Uh! Pen-Pineapple-Apple-Pen<br />
                     Pen-Pineapple-Apple-Pen</p>
             </div>
-
-
+            <div id="three" class="bio">
+                <p>When lava pours out near the sea surface, tremendous volcanic explosions sometimes occur. In time, submarine sea-mounts or islands are formed. When lava flows underwater, it behaves differently.</p>
+                <p>And a new contraption to capture a 'dandelion' in one piece has been put together by the crew. The preparation for a dive is always a tense time.</p>
+            </div>
         </div>
-
     </div>
     <!-- /content -->
 
-    <!--<div data-role="footer" data-position="fixed">-->
-    <!--<p class="help">-->
-    <!--</p>-->
-    <!--</div>-->
+    <div data-role="footer" data-position="fixed" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-user ui-btn-icon-top">
+                        <span>Biography</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-location ui-btn-icon-top">
+                        <span>Locate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-calendar ui-btn-icon-top">
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-phone ui-btn-icon-top">
+                        <span>Call</span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
 </div>
 <!-- /page -->
 
