@@ -13,6 +13,15 @@
             $.mobile.navigate(destination);
         });
 
+        var $nameLinks = $('#aListOfNames a');
+        $nameLinks.on('click', function(evt){
+            evt.preventDefault();
+            $('.personName').text($(this).text());
+            var destination = $(this).attr('href');
+            $.mobile.navigate(destination);
+        });
+
+
         var $signInForm = $('#sign-in-form');
         $signInForm.on('submit', function(){
             var destination = $(this).attr('action');

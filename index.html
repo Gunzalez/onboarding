@@ -249,16 +249,50 @@
         <form class="ui-filterable filter-icon">
             <input id="listOfNames" placeholder="Filter names..." data-type="search" class="ui-icon-gear ui-nodisc-icon" autocomplete="off" />
         </form>
-        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-input="#listOfNames">
-            <li><a href="#staff1" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
-            <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Rebeca Martins</a></li>
-            <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Mark Wahlberg</a></li>
-            <li><a href="#staff2" class="ui-nodisc-icon ui-alt-icon">Andrew Morgan</a></li>
-            <li><a href="#staff3" class="ui-nodisc-icon ui-alt-icon">Will Rogers</a></li>
-            <li><a href="#staff4" class="ui-nodisc-icon ui-alt-icon">Susan Foil</a></li>
-            <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Tizzy Jones</a></li>
-            <li><a href="#staff6" class="ui-nodisc-icon ui-alt-icon">Chris Dal-Din</a></li>
+        <ul data-role="listview" id="aListOfNames" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-input="#listOfNames">
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Rebeca Martins</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Wahlberg</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Andrew Morgan</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Will Rogers</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Susan Foil</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Tizzy Jones</a></li>
+            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Chris Dal-Din</a></li>
         </ul>
+    </div>
+    <!-- /content -->
+
+    <!--<div data-role="footer" data-position="fixed">-->
+    <!--<p class="help">-->
+    <!--</p>-->
+    <!--</div>-->
+</div>
+<!-- /page -->
+
+<!-- Start of Results page -->
+<div data-role="page" id="person">
+    <div data-role="panel" id="personPanel" data-position="right" data-display="overlay">
+        <p><a href="#sign-in" class="logout-button">Log out</a></p>
+    </div>
+
+    <div data-role="header" data-position="fixed">
+        <a href="#"
+           class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Back</a>
+
+        <h1>Person_</h1>
+        <a href="#personPanel"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Menu</a>
+    </div>
+
+    <div role="main" class="ui-content main-content">
+        <h2 class="page-title personName"></h2>
+        <div class="intro">
+            <p>And here we wax lyrical about <span class="personName"></span></p>
+
+        </div>
+
     </div>
     <!-- /content -->
 
