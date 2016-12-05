@@ -3,7 +3,8 @@
 <head>
     <title>Valtech onBoarding_</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
     <link rel="stylesheet" href="css/valtech_.css"/>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.js"></script>
@@ -27,17 +28,25 @@
 
                 <div class="row">
                     <label for="username-sign-in" class="ui-hidden-accessible">Username</label>
+
                     <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear vl-input-text">
-                        <input type="text" name="username" id="username-sign-in" data-clear-btn="true" data-enhanced="true" placeholder="username">
-                        <a href="#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a>
+                        <input type="text" name="username" id="username-sign-in" data-clear-btn="true"
+                               data-enhanced="true" placeholder="username">
+                        <a href="#" tabindex="-1" aria-hidden="true"
+                           class="ui-input-clear ui-btn ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden"
+                           title="Clear text">Clear text</a>
                     </div>
                 </div>
 
                 <div class="row">
                     <label for="password-sign-in" class="ui-hidden-accessible">Password</label>
+
                     <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear vl-input-text">
-                        <input type="password" name="password" id="password-sign-in" data-clear-btn="true" data-enhanced="true" placeholder="password">
-                        <a href="#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a>
+                        <input type="password" name="password" id="password-sign-in" data-clear-btn="true"
+                               data-enhanced="true" placeholder="password">
+                        <a href="#" tabindex="-1" aria-hidden="true"
+                           class="ui-input-clear ui-btn ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden"
+                           title="Clear text">Clear text</a>
                     </div>
                 </div>
 
@@ -69,7 +78,8 @@
 
     <div data-role="header" data-position="fixed">
         <h1>&nbsp;</h1>
-        <a href="#landingPanel" data-dismissible="false" class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+        <a href="#landingPanel" data-dismissible="false"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -105,9 +115,14 @@
     </div>
 
     <div data-role="header" data-position="fixed">
-        <a href="#" class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Back</a>
+        <a href="#"
+           class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Back</a>
+
         <h1>People_</h1>
-        <a href="#peoplePanel" class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Menu</a>
+        <a href="#peoplePanel"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -116,9 +131,13 @@
 
             <div class="row padded-row">
                 <label for="search" class="ui-hidden-accessible">Search:</label>
+
                 <div class="ui-input-search ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear">
-                    <input type="text" data-type="search" name="search" id="search" data-enhanced="true" placeholder="Search by name..." class="search" />
-                    <a href="#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a>
+                    <input type="text" data-type="search" name="search" id="search" data-enhanced="true"
+                           placeholder="Search by name..." class="search"/>
+                    <a href="#" tabindex="-1" aria-hidden="true"
+                       class="ui-input-clear ui-btn ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden"
+                       title="Clear text">Clear text</a>
                 </div>
             </div>
 
@@ -127,31 +146,34 @@
 
                 <div class="row">
                     <label for="people-capabilities" class="ui-hidden-accessible">Capabilities</label>
-                    <select name="people-capabilities" id="people-capabilities" multiple="multiple" data-native-menu="false">
+                    <select name="people-capabilities" id="people-capabilities" multiple="multiple"
+                            data-native-menu="false">
                         <option>Capabilities</option>
-                        <option value="js">JavaScript</option>
-                        <option value="html">HTML</option>
-                        <option value="ui">UI Design</option>
-                        <option value="ux">User Experience</option>
-                        <option value=".net">.NET</option>
-                        <option value="node">NodeJS</option>
-                        <option value="ps">PhotoShop</option>
-                        <option value="content">Content Design</option>
-                        <option value="management">Management</option>
-                        <option value="mw">Lightsaber</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="HTML">HTML</option>
+                        <option value="UI Design">UI Design</option>
+                        <option value="User Experience">User Experience</option>
+                        <option value=".NET">.NET</option>
+                        <option value="NodeJS">NodeJS</option>
+                        <option value="PhotoShop">PhotoShop</option>
+                        <option value="Content Design">Content Design</option>
+                        <option value="Project Management">Project Management</option>
+                        <option value="Quality Assurance">Quality Assurance</option>
+                        <option value="Force choke">Force choke</option>
                     </select>
                 </div>
 
                 <div class="row">
-                    <label for="people-clients" class="ui-hidden-accessible">Capabilities</label>
-                    <select name="people-clients" id="people-clients" data-native-menu="false">
+                    <label for="people-client" class="ui-hidden-accessible">Capabilities</label>
+                    <select name="people-client" id="people-client" data-native-menu="false">
                         <option>Client account</option>
-                        <option value="1">Client One</option>
-                        <option value="2">Another Client</option>
-                        <option value="3">The Third Client</option>
-                        <option value="4">OhAndA Fourth</option>
-                        <option value="5">Bench 101</option>
-                        <option value="6">The Republic</option>
+                        <option value="Client One">Client One</option>
+                        <option value="Another Client">Another Client</option>
+                        <option value="The Third Client">The Third Client</option>
+                        <option value="OhAndA Fourth">OhAndA Fourth</option>
+                        <option value="Bench 101">Bench 101</option>
+                        <option value="any Client">any client</option>
+                        <option value="The Empire">The Empire</option>
                     </select>
                 </div>
 
@@ -159,23 +181,25 @@
                     <label for="people-location" class="ui-hidden-accessible">Capabilities</label>
                     <select name="people-location" id="people-location" data-native-menu="false">
                         <option>Location</option>
-                        <option value="1">London</option>
-                        <option value="2">Fleetwood</option>
-                        <option value="3">Bristol</option>
-                        <option value="4">France</option>
-                        <option value="6">Germany</option>
-                        <option value="7">Amsterdam</option>
-                        <option value="8">Alderaan</option>
+                        <option value="London">London</option>
+                        <option value="Fleetwood">Fleetwood</option>
+                        <option value="Bristol">Bristol</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="any location">any location</option>
+                        <option value="Alderaan">Alderaan</option>
                     </select>
                 </div>
 
                 <div class="row">
                     <label for="people-cop" class="ui-hidden-accessible">Capabilities</label>
                     <select name="people-cop" id="people-cop" data-native-menu="false">
-                        <option>Community Of Practice</option>
-                        <option value="1">Creative</option>
-                        <option value="2">Data Science</option>
-                        <option value="3">Rebellion</option>
+                        <option>Community of Practice</option>
+                        <option value="Creative">Creative</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="any Community of Practice">any Community of Practice</option>
+                        <option value="The Rebellion">The Rebellion</option>
                     </select>
                 </div>
 
@@ -205,14 +229,33 @@
     </div>
 
     <div data-role="header" data-position="fixed">
-        <a href="#" class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Back</a>
+        <a href="#"
+           class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Back</a>
+
         <h1>People_</h1>
-        <a href="#resultsPanel" class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Menu</a>
+        <a href="#resultsPanel"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
-        <!--<h2 class="page-title"></h2>-->
-        <p style="text-align: center">Filterable list of names</p>
+        <div class="intro">
+            <p>Results for <span id="resultsFromPeople"><strong>no terms</strong></span></p>
+
+            <p>Use the filter below or <a href="#" data-rel="back">edit</a> you search</p>
+
+        </div>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-icon="filter">
+            <li><a href="#staff1" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
+            <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Rebeca Martins</a></li>
+            <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Mark Wahlberg</a></li>
+            <li><a href="#staff2" class="ui-nodisc-icon ui-alt-icon">Andrew Morgan</a></li>
+            <li><a href="#staff3" class="ui-nodisc-icon ui-alt-icon">Will Rogers</a></li>
+            <li><a href="#staff4" class="ui-nodisc-icon ui-alt-icon">Susan Foil</a></li>
+            <li><a href="#staff5" class="ui-nodisc-icon ui-alt-icon">Tizzy Jones</a></li>
+            <li><a href="#staff6" class="ui-nodisc-icon ui-alt-icon">Chris Dal-Din</a></li>
+        </ul>
     </div>
     <!-- /content -->
 
@@ -226,23 +269,23 @@
 
 <!--&lt;!&ndash; Start of NEW-PAGE page &ndash;&gt;-->
 <!--<div data-role="page" id="PAGE-ID">-->
-    <!--<div data-role="panel" id="PAGE-IDPanel" data-position="right" data-display="overlay">-->
-        <!--<p><a href="#sign-in" class="logout-button">Log out</a></p>-->
-    <!--</div>-->
-    <!--<div data-role="header" data-position="fixed">-->
-        <!--<a href="#" class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Back</a>-->
-        <!--<h1>TITLE_</h1>-->
-        <!--<a href="#PAGE-ID" class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Menu</a>-->
-    <!--</div>-->
+<!--<div data-role="panel" id="PAGE-IDPanel" data-position="right" data-display="overlay">-->
+<!--<p><a href="#sign-in" class="logout-button">Log out</a></p>-->
+<!--</div>-->
+<!--<div data-role="header" data-position="fixed">-->
+<!--<a href="#" class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Back</a>-->
+<!--<h1>TITLE_</h1>-->
+<!--<a href="#PAGE-ID" class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext" data-rel="back">Menu</a>-->
+<!--</div>-->
 
-    <!--<div role="main" class="ui-content main-content">-->
-        <!--<h2 class="page-title">HEADER</h2>-->
-    <!--</div>-->
-    <!--&lt;!&ndash; /content &ndash;&gt;-->
-    <!---->
-    <!--<div data-role="footer" data-position="fixed">-->
-        <!--<p class="help"></p>-->
-    <!--</div>-->
+<!--<div role="main" class="ui-content main-content">-->
+<!--<h2 class="page-title">HEADER</h2>-->
+<!--</div>-->
+<!--&lt;!&ndash; /content &ndash;&gt;-->
+<!---->
+<!--<div data-role="footer" data-position="fixed">-->
+<!--<p class="help"></p>-->
+<!--</div>-->
 <!--</div>-->
 <!--&lt;!&ndash; /page &ndash;&gt;-->
 

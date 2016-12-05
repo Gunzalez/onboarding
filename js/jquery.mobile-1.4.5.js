@@ -14255,6 +14255,7 @@ $.widget( "mobile.filterable", $.mobile.filterable, {
 			updatePlaceholder = true,
 			textinputOpts = {};
 
+
 		if ( !selector ) {
 			if ( this._isSearchInternal() ) {
 
@@ -14262,7 +14263,6 @@ $.widget( "mobile.filterable", $.mobile.filterable, {
 				// the current textinput is already of the internally generated variety.
 				return;
 			} else {
-
 				// Generating a new textinput widget. No need to set the placeholder
 				// further down the function.
 				updatePlaceholder = false;
@@ -14277,6 +14277,7 @@ $.widget( "mobile.filterable", $.mobile.filterable, {
 						selector.blur();
 					})
 					.insertBefore( this.element );
+                console.log(this);
 				if ( $.mobile.textinput ) {
 					if ( this.options.filterTheme != null ) {
 						textinputOpts[ "theme" ] = opts.filterTheme;

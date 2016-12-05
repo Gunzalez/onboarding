@@ -40,10 +40,12 @@ input, button, .ui-corner-all {
 	border-radius: 0 !important;
 }
 
+.ui-input-search input,
 .row input {
 	padding: 0.7em 0.6em !important;
 }
 
+.ui-input-search input,
 .row input.search {
 	padding-left: 2em !important;
 }
@@ -76,6 +78,8 @@ input, button, .ui-corner-all {
 .ui-input-search,
 .vl-input-text {
     border: none !important;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
     border-bottom: 1px solid #c6c6c6 !important;
     box-shadow: none !important;
 }
@@ -95,4 +99,15 @@ input, button, .ui-corner-all {
 .ui-page-theme-a 
 .ui-panel-wrapper {
 	background: #f0f0f0;	
+}
+
+.ui-filterable .ui-input-search  {
+    margin: 0 !important;
+    border: 1px solid #ddd !important;
+    border-bottom: none !important;
+}
+
+html .ui-filterable+.ui-listview,
+html .ui-filterable.ui-listview {
+    margin-top: 0;
 }
