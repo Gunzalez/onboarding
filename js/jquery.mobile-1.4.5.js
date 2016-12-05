@@ -6653,7 +6653,7 @@ $.widget( "mobile.page", $.mobile.page, {
 			dst = this._inner.find( ":jqmData(role='header')" ).first();
 			btn = $( "<a></a>", {
 					"href": "#",
-					"class": "ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-" + location
+					"class": "ui-btn ui-naked-btn ui-nodisc-icon ui-alt-icon ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-" + location
 				})
 				.attr( "data-" + $.mobile.ns + "rel", "back" )
 				.text( text || this.options.closeBtnText || "" )
@@ -6794,7 +6794,7 @@ $.widget( "mobile.dialog", {
 			btn = $( "<a></a>", {
 					"role": "button",
 					"href": "#",
-					"class": "ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-" + location
+					"class": "ui-btn ui-naked-btn ui-nodisc-icon ui-alt-icon ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-" + location
 				})
 				.text( text || this.options.closeBtnText || "" )
 				.prependTo( dst );
@@ -9694,7 +9694,7 @@ $.widget( "mobile.flipswitch", $.extend({
 
 		clearButton: function() {
 			return $( "<a href='#' tabindex='-1' aria-hidden='true' " +
-				"class='ui-input-clear ui-btn ui-icon-delete ui-nodisc-icon ui-alt-icon ui-btn-icon-notext ui-corner-all'>" +
+				"class='ui-input-clear ui-naked-btn ui-nodisc-icon ui-alt-icon ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all'>" +
 				"</a>" )
 					.attr( "title", this.options.clearBtnText )
 					.text( this.options.clearBtnText );
