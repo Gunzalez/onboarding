@@ -56,8 +56,10 @@
             } else if(terms.length == 1) {
                 termsInWords = terms[0] + '.';
             }
+
             if(termsInWords != ''){
                 $('#resultsFromPeople').empty().append(termsInWords);
+                $('#listOfNames').parent().find('a').trigger('click'); // empties the filter
             }
 
             $.mobile.navigate(destination);
