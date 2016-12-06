@@ -152,6 +152,7 @@ html .ui-filterable.ui-listview {
 .footer .ui-btn.ui-btn-active {
     outline: none !important;
     box-shadow: none !important;
+    transition: all 0.5s ease;
 }
 
 .ui-btn, input {
