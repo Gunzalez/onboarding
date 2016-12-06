@@ -74,8 +74,9 @@
 <div data-role="page" id="landing">
     <div data-role="panel" class="panel" id="landingPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#landing" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 
@@ -111,13 +112,14 @@
 </div>
 <!-- /page -->
 
-<!-- Start of People page -->
+<!-- Start of People: search page -->
 <div data-role="page" id="people">
     <div data-role="panel" class="panel" id="peoplePanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#people" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 
@@ -128,8 +130,7 @@
 
         <h1>People_</h1>
         <a href="#peoplePanel"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
-           data-rel="back">Menu</a>
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -229,13 +230,14 @@
 </div>
 <!-- /page -->
 
-<!-- Start of Results page -->
+<!-- Start of People: results page -->
 <div data-role="page" id="results">
     <div data-role="panel" class="panel" id="resultsPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#results" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 
@@ -246,13 +248,12 @@
 
         <h1>People_</h1>
         <a href="#resultsPanel"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
-           data-rel="back">Menu</a>
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div role="main" class="ui-content main-content">
         <div class="intro">
-            <p id="resultsFromPeople"><strong>no terms</strong></p>
+            <p id="resultsFromPeople">No <strong>search terms</strong> entered</p>
 
             <p><a href="#" data-rel="back" class="ui-btn ui-btn-inline">Refine search</a></p>
 
@@ -284,13 +285,14 @@
 </div>
 <!-- /page -->
 
-<!-- Start of Results page -->
+<!-- Start of Person detail page -->
 <div data-role="page" id="person">
     <div data-role="panel" class="panel" id="personPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#person" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 
@@ -301,8 +303,7 @@
 
         <h1><span class="personName">Mr Nobody</span>_</h1>
         <a href="#personPanel"
-           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-gear ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
-           data-rel="back">Menu</a>
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
     <div class="photo">
@@ -365,9 +366,10 @@
 <div data-role="page" id="quick-tools">
     <div data-role="panel" class="panel" id="quick-toolsPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#quick-tools" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 
@@ -431,13 +433,14 @@
 </div>
 <!-- /page -->
 
-<!-- Start of Quick links page -->
+<!-- Start of Active Directory page -->
 <div data-role="page" id="active-directory">
     <div data-role="panel" class="panel" id="active-directoryPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#active-directory" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 
@@ -493,8 +496,10 @@
 <div data-role="page" id="preferences">
     <div data-role="panel" class="panel" id="preferencesPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete">Log out</a></li>
+            <li><a href="#preferences" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <!-- <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li> -->
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
         </ul>
     </div>
 

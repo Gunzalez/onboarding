@@ -46,6 +46,13 @@
             $.mobile.navigate(destination);
         });
 
+        var $closePanelButtons = $('.close-panel');
+        $closePanelButtons.on('click', function(evt){
+            evt.preventDefault();
+            var panelID = '#' + $(this).parents('.panel').attr('id');
+            $(panelID).panel("close");
+        });
+
         var $peopleForm = $('#people-form');
         $peopleForm.on('submit', function(){
 

@@ -2,3 +2,6 @@ TODO
 ====================
 Save to home screen prompt
 Orientation and large screen blocks
+smooth CSS3 background on footer buttons, and down state back on Biography
+Dynamic results page
+See about local storage
