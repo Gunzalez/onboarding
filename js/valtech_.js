@@ -54,13 +54,19 @@
             client = $('#people-client',$(this)).val(),
             location = $('#people-location',$(this)).val(),
             cop = $('#people-cop',$(this)).val(),
-            terms = [];
+            terms = [],
+            termsInWords = '';
+            
+            if($.trim($('#search').val()).length > 0){
+                var term = '<strong>\'' + $.trim($('#search').val()).replace(' ', '&nbsp;') + '\'</strong>';
+                terms.push(term);
+            }
 
             if(skills != null){
                 skills.forEach(function(skill){
                     var term = '<strong>' + skill.replace(' ', '&nbsp;') + '</strong>';
                     terms.push(term);
-                })
+                });
             }
 
             if(client != 'Client account'){
@@ -75,13 +81,12 @@
                 terms.push('<strong>' + cop.replace(' ', '&nbsp;') + '</strong>');
             }
 
-            var termsInWords = '';
             if(terms.length > 1){
                 var lastWord = terms.pop();
                 termsInWords = terms.join(', ');
-                termsInWords = termsInWords + ' and ' + lastWord + '.';
+                termsInWords = termsInWords + ' and ' + lastWord;
             } else if(terms.length == 1) {
-                termsInWords = terms[0] + '.';
+                termsInWords = terms[0];
             }
 
             // create list of search strings, to display on next screen
