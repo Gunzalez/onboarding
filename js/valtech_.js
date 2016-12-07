@@ -43,12 +43,11 @@
 
         var $nameLinks = $('#aListOfNames').find('a');
         $nameLinks.on('click', function(evt){
-
             evt.preventDefault();
+
             if (typeof(Storage) !== "undefined") {
                 localStorage.setItem("person", $(this).text());
             }
-
             var destination = $(this).attr('href');
             $.mobile.navigate(destination);
         });
@@ -56,6 +55,7 @@
         var $closePanelButtons = $('.close-panel');
         $closePanelButtons.on('click', function(evt){
             evt.preventDefault();
+
             var panelID = '#' + $(this).parents('.panel').attr('id');
             $(panelID).panel("close");
         });
@@ -64,7 +64,6 @@
             evt.preventDefault();
 
             $('#people').addClass("people-link");
-
             var destination = $(this).attr('href');
             $.mobile.navigate(destination);
         });
@@ -192,8 +191,6 @@
                 if(termsObj.hasOwnProperty('cop')){
                     termsArray.push(termsObj.cop);
                 }
-
-                console.log(termsArray.length);
 
                 if(termsArray.length > 2){
                     var lastWord = termsArray.pop();
