@@ -1,40 +1,16 @@
 {
-  "name": "Valtech OnBoarding_",
-  "short_name": "OnBoarding",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#f0f0f0",
-  "description": "A simple  introduction to Valtech app",
-  "icons": [{
-    "src": "images/touch/homescreen48.png",
-    "sizes": "48x48",
-    "type": "image/png"
-  }, {
-    "src": "images/touch/homescreen72.png",
-    "sizes": "72x72",
-    "type": "image/png"
-  }, {
-    "src": "images/touch/homescreen96.png",
-    "sizes": "96x96",
-    "type": "image/png"
-  }, {
-    "src": "images/touch/homescreen144.png",
-    "sizes": "144x144",
-    "type": "image/png"
-  }, {
-    "src": "images/touch/homescreen168.png",
-    "sizes": "168x168",
-    "type": "image/png"
-  }, {
-    "src": "images/touch/homescreen192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  }],
-  "related_applications": [{
-    "platform": "web"
-  }, {
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
-  }]
+        "lang": "en",
+        "dir": "ltr",
+        "name": "Valtech OnBoarding_",
+        "short_name": "OnBoarding",
+        "start_url": "http://www.gunzalez.com/pp/onboarding_/index.html",
+        "display": "standalone",
+        "orientation": "portrait",
+        "background_color": "#f0f0f0",
+        "description": "A mobile web app introducing Valtech to new joiners",
+        "icons": [{
+                "src": "app-icon.png",
+                "sizes": "120x120",
+                "type": "image/png"
+        }]
 }
