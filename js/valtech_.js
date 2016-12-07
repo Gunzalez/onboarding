@@ -4,6 +4,14 @@
 
     var onboarding = {};
 
+    onboarding.CONSTANTS = {
+        strings : {
+            clientAccount: "Client account",
+            location: "Location",
+            cop: "Community of Practice"
+        }
+    };
+
     onboarding.fun = {
         switchBios: function(){
             var $bio = $('.bio'),
@@ -37,10 +45,9 @@
         $nameLinks.on('click', function(evt){
 
             evt.preventDefault();
-            $('.personName').text($(this).text());
-
-            // just some fun
-            onboarding.fun.switchBios();
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("person", $(this).text());
+            }
 
             var destination = $(this).attr('href');
             $.mobile.navigate(destination);
@@ -51,6 +58,15 @@
             evt.preventDefault();
             var panelID = '#' + $(this).parents('.panel').attr('id');
             $(panelID).panel("close");
+        });
+
+        $('.people-link').on('click', function(evt){
+            evt.preventDefault();
+
+            $('#people').addClass("people-link");
+
+            var destination = $(this).attr('href');
+            $.mobile.navigate(destination);
         });
 
         var $peopleForm = $('#people-form');
@@ -73,15 +89,15 @@
                 terms.skills = skills;
             }
 
-            if(client != 'Client account'){
+            if(client != onboarding.CONSTANTS.strings.clientAccount){
                 terms.client = client;
             }
 
-            if(location != 'Location'){
+            if(location != onboarding.CONSTANTS.strings.location){
                 terms.location = location;
             }
 
-            if(cop != 'Community of Practice'){
+            if(cop != onboarding.CONSTANTS.strings.cop){
                 terms.cop = cop;
             }
 
@@ -90,25 +106,24 @@
                 if (typeof(Storage) !== "undefined") {
                     localStorage.setItem("searchTerms", searchTermStrings);
                 }
+            } else {
+                if (typeof(Storage) !== "undefined") {
+                    localStorage.removeItem("searchTerms");
+                }
             }
 
             $.mobile.navigate(destination);
             return false;
         });
-
-        onboarding.fun.switchBios();
     };
 
-    $(document).ready(function () {
-        onboarding.init();
-    });
-
     $(document).on("pagebeforecreate", "#people", function(){
+
         if (typeof(Storage) !== "undefined") {
             var searchTermStrings = localStorage.getItem("searchTerms");
-            if(searchTermStrings !== undefined){
+            if(searchTermStrings !== null){
                 var termsObj = JSON.parse(searchTermStrings),
-                    $peopleForm = $('#people-form');
+                        $peopleForm = $('#people-form');
 
                 if(termsObj.hasOwnProperty('field')){
                     $('#search', $peopleForm).val(termsObj.field);
@@ -129,19 +144,32 @@
                 if(termsObj.hasOwnProperty('cop')){
                     $('#people-cop', $peopleForm).val(termsObj.cop);
                 }
-
             }
+        }
+    });
+
+    $(document).on("pagebeforeshow", "#people", function(){
+        var $peopleScreen = $('#people');
+        if($peopleScreen.hasClass("people-link")){
+            $("#search").val('');
+            $("#people-capabilities").val([]).selectmenu("refresh");
+            $("#people-client").val(onboarding.CONSTANTS.strings.clientAccount).selectmenu("refresh");
+            $("#people-location").val(onboarding.CONSTANTS.strings.location).selectmenu("refresh");
+            $("#people-cop").val(onboarding.CONSTANTS.strings.cop).selectmenu("refresh");
+            $peopleScreen.removeClass('people-link');
         }
     });
 
     $(document).on("pagebeforeshow", "#results", function(){
 
         if (typeof(Storage) !== "undefined") {
-            var searchTermStrings = localStorage.getItem("searchTerms");
-            if(searchTermStrings !== undefined){
+            var searchTermStrings = localStorage.getItem("searchTerms"),
+                    $searchTerms = $('#search-terms');
+
+            if(searchTermStrings !== null){
                 var termsObj = JSON.parse(searchTermStrings),
-                    termsArray = [],
-                    termsInWords = '';
+                        termsArray = [],
+                        termsInWords = '';
 
                 if(termsObj.hasOwnProperty('field')){
                     termsArray.push('\''+termsObj.field+'\'');
@@ -165,21 +193,43 @@
                     termsArray.push(termsObj.cop);
                 }
 
-                if(termsArray.length > 1){
+                console.log(termsArray.length);
+
+                if(termsArray.length > 2){
                     var lastWord = termsArray.pop();
                     termsInWords = termsArray.join(', ');
                     termsInWords = termsInWords + ' <span>and</span> ' + lastWord;
-                } else if(terms.length == 1) {
-                    termsInWords = terms[0];
+                } else if(termsArray.length == 2) {
+                    termsInWords = termsArray[0] + ' <span>and</span> ' + termsArray[1];
+                } else if(termsArray.length == 1) {
+                    termsInWords = termsArray[0];
                 }
 
                 termsInWords = '<strong>' + termsInWords + '</strong>';
-                $('#search-terms').empty().append(termsInWords);
+                $searchTerms.empty().append(termsInWords);
 
+            } else {
+
+                $searchTerms.empty().append($searchTerms.attr("data-reset"));
             }
         }
 
         $('#listOfNames').parent().find('a').trigger('click'); // causing filter field to empty out
+    });
+
+    $(document).on("pagebeforeshow", "#person", function(){
+
+        if (typeof(Storage) !== "undefined") {
+            var person = localStorage.getItem("person");
+            $('.personName').text(person);
+        }
+
+        // just some fun
+        onboarding.fun.switchBios();
+    });
+
+    $(document).ready(function () {
+        onboarding.init();
     });
 
 }(jQuery, window));
