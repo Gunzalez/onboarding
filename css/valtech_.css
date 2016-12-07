@@ -166,5 +166,13 @@ html .ui-filterable.ui-listview {
 
 .close-panel {
 	background: #e9e9e9 !important;
-	border-color: #e9e9e9 !important; 
+	border-color: #e9e9e9 !important;
+    padding-bottom: 0.65em !important;
+}
+
+
+
+#search-terms strong span {
+    color: #444 !important;
+    font-weight: normal !important;
 }
