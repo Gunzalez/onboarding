@@ -183,12 +183,30 @@ html .ui-filterable.ui-listview {
     padding-bottom: 0.65em !important;
 }
 
+.long-copy {
+    padding-top: 10px;
+}
+
 .long-copy h4 {
     padding: 0;
     margin: 0;
 }
 
+p {
+    line-height: 120%;
+}
+
 #search-terms strong span {
     color: #444 !important;
     font-weight: normal !important;
+}
+
+.ui-btn-icon-notext.ui-btn-right {
+    top: .65em !important;
+    right: .65em !important;
+}
+
+.ui-btn-icon-notext.ui-btn-left {
+    top: .65em !important;
+    left: .65em !important;
 }
