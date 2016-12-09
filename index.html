@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Valtech onBoarding_</title>
+    <title>OnBoarding_</title>
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -70,14 +70,18 @@
                 </div>
             </fieldset>
 
+            <div class="disclaimer">
+                <h4>Disclaimer</h4>
+                <p>This is a prototype, no access details needed (just press NEXT), no details are saved, all names and content are random, some buttons don't work, some screens don't have content, everything is grey... but we think you'll get the idea.</p>
+                <p>Add this to your homescreen for app like experience. <br /><a href="http://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/" target="_blank" title="opens in another tab">how to add to homescreen</a>.</p>
+            </div>
+
         </form>
     </div>
     <!-- /content -->
 
     <!--<div data-role="footer" data-position="fixed">-->
-    <!--<p class="help">-->
-    <!--<a href="#">Forgotten username or password?</a>-->
-    <!--</p>-->
+        <!---->
     <!--</div>-->
 </div>
 <!-- /page -->
@@ -282,14 +286,16 @@
         <ul data-role="listview" id="aListOfNames" data-filter="true" data-filter-placeholder="Filter names..." data-inset="true" data-input="#listOfNames">
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Williams</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Rebecca Martins</a></li>
-            <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Christoph Waltz</a></li>
+            <li><a href="#person2" class="ui-nodisc-icon ui-alt-icon">Christoph Waltz</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mark Wahlberg</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Marion Ravenwood</a></li>
+            <li><a href="#person2" class="ui-nodisc-icon ui-alt-icon">Sophie Christiansen</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Andrew Morgan</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Mia Wallace</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Susan Foil</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Tizzy Jones</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Jim Morrison</a></li>
+            <li><a href="#person2" class="ui-nodisc-icon ui-alt-icon">Christian Benteke</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Clarice Starling</a></li>
             <li><a href="#person" class="ui-nodisc-icon ui-alt-icon">Bruce Lee</a></li>
             <li><a href="#person2" class="ui-nodisc-icon ui-alt-icon">Chris Dal-Din</a></li>
@@ -309,7 +315,7 @@
 <div data-role="page" id="person2">
     <div data-role="panel" class="panel" id="person2Panel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#person" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
+            <li><a href="#person2" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
             <li><a href="#about" class="ui-nodisc-icon ui-alt-icon ui-icon-info">About</a></li>
@@ -323,7 +329,7 @@
            class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
            data-rel="back">Back</a>
 
-        <h1><span class="personName">Valtech staff</span>_</h1>
+        <h1>People_</h1>
         <a href="#person2Panel"
            class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
@@ -425,7 +431,7 @@
     </div>
 
     <div class="photo">
-        <p>{{ PHOTO }}</p>
+        <p>{{ PHOTO SLIDER THINGY }}</p>
     </div>
     <div role="main" class="ui-content main-content">
         <div class="bios">
@@ -637,8 +643,96 @@
 
     <div role="main" class="ui-content main-content">
         <div class="intro">
-            <h2>Settings and Configurations</h2>
+
         </div>
+        <p class="placeHolderText">
+
+            {{  probably settings and configurations }}
+        </p>
+
+    </div>
+    <!-- /content -->
+
+    <!--<div data-role="footer" data-position="fixed">-->
+    <!--<p class="help">-->
+
+    <!--</p>-->
+    <!--</div>-->
+</div>
+<!-- /page -->
+
+<!-- Start of Resources page -->
+<div data-role="page" id="resources">
+    <div data-role="panel" class="panel" id="resourcesPanel" data-position="right" data-display="overlay">
+        <ul data-role="listview">
+            <li><a href="#resources" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#about" class="ui-nodisc-icon ui-alt-icon ui-icon-info">About</a></li>
+            <li><a href="#" class="page-refresh ui-nodisc-icon ui-alt-icon ui-icon-refresh">Refresh</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
+        </ul>
+    </div>
+
+    <div data-role="header" data-position="fixed">
+        <a href="#"
+           class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Back</a>
+
+        <h1>Resources_</h1>
+        <a href="#resourcesPanel" data-dismissible="false"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+    </div>
+
+    <div role="main" class="ui-content main-content">
+        <div class="intro">
+
+        </div>
+        <p class="placeHolderText">
+            {{  probably a list of resources }}
+        </p>
+
+    </div>
+    <!-- /content -->
+
+    <!--<div data-role="footer" data-position="fixed">-->
+    <!--<p class="help">-->
+
+    <!--</p>-->
+    <!--</div>-->
+</div>
+<!-- /page -->
+
+<!-- Start of Projects page -->
+<div data-role="page" id="projects">
+    <div data-role="panel" class="panel" id="projectsPanel" data-position="right" data-display="overlay">
+        <ul data-role="listview">
+            <li><a href="#projects" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
+            <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
+            <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
+            <li><a href="#about" class="ui-nodisc-icon ui-alt-icon ui-icon-info">About</a></li>
+            <li><a href="#" class="page-refresh ui-nodisc-icon ui-alt-icon ui-icon-refresh">Refresh</a></li>
+            <li><a href="#sign-in" class="ui-nodisc-icon ui-alt-icon logout-button ui-icon-power">Log out</a></li>
+        </ul>
+    </div>
+
+    <div data-role="header" data-position="fixed">
+        <a href="#"
+           class="ui-naked-btn ui-btn ui-btn-icon-left ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-notext"
+           data-rel="back">Back</a>
+
+        <h1>Projects_</h1>
+        <a href="#projectsPanel" data-dismissible="false"
+           class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
+    </div>
+
+    <div role="main" class="ui-content main-content">
+        <div class="intro">
+
+        </div>
+        <p class="placeHolderText">
+
+            {{  probably a list of project, details }}
+        </p>
 
     </div>
     <!-- /content -->
@@ -689,7 +783,7 @@
             <p>This prototype will help determine what content goes in, the target audience - just new joiners or everyone, data access levels, privacy, if we need a dedicated CMS and such and such.</p>
 
             <h4>Technology</h4>
-            <p>Currently this is a web app, but we hope it helps you visualise and decide on whether to keep it as web app always, or go native later, or maybe scrap it all together.</p>
+            <p>Currently this is a web app, but we hope it helps you visualise and decide on whether to keep it as web app, or build an iOS version, or maybe scrap it all together due to lack of resources.</p>
 
             <h4>Feedback</h4>
             <p>This is just the very start and we need your input to make it work for everyone. Suggestions, questions, LOLs, flowers, please send them all to <a href="mailto:tizzy.jones@valtech.co.uk">tizzy.jones@valtech.co.uk</a>.</p>
@@ -711,7 +805,7 @@
 <div data-role="page" id="location">
     <div data-role="panel" class="panel" id="locationPanel" data-position="right" data-display="overlay">
         <ul data-role="listview">
-            <li><a href="#about" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
+            <li><a href="#location" class="close-panel ui-nodisc-icon ui-alt-icon logout-button ui-icon-delete" data-rel="close">&nbsp;</a></li>
             <li><a href="#landing" class="ui-nodisc-icon ui-alt-icon ui-icon-home">Home screen</a></li>
             <li><a href="#preferences" class="ui-nodisc-icon ui-alt-icon ui-icon-gear">Preferences</a></li>
             <li><a href="#" class="page-refresh ui-nodisc-icon ui-alt-icon ui-icon-refresh">Refresh</a></li>
@@ -744,8 +838,8 @@
             <h4>Valtech UK</h4>
             <p>46 Colebrooke Row
                 <br />London<br /> N1 8AF</p>
-            <p class="placeHolderText">
 
+            <p class="placeHolderText">
                 {{  probably a list of all Valtech locations? }}
             </p>
 

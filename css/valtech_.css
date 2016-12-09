@@ -284,5 +284,16 @@ p {
     padding: 20px 0;
 }
 
+.disclaimer {
+    padding-top: 20px;
+    font-size: 0.80em;
+}
+
+.disclaimer h4 {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
 
 
