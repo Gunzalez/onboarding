@@ -225,6 +225,16 @@
         onboarding.fun.switchBios();
     });
 
+
+    $(document).on("pagebeforeshow", "#person2", function(){
+
+        if (typeof(Storage) !== "undefined") {
+            var person = localStorage.getItem("person");
+            $('.personName').text(person);
+        }
+
+    });
+
     $(document).ready(function () {
         onboarding.init();
     });
