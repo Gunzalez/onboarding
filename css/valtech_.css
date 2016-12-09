@@ -163,6 +163,15 @@ html .ui-filterable.ui-listview {
     box-sizing: border-box;
 }
 
+.photo.compound {
+    padding: 40px 0;
+}
+
+.photo.compound .box {
+    width: 300px;
+    margin: 0 auto;
+}
+
 .image-placeholder {
     background: #cccccc;
     width: 100px;
@@ -179,6 +188,7 @@ html .ui-filterable.ui-listview {
 .role {
     float: left;
     padding-top: 20px;
+    width: 170px;
 }
 
 .personName {
@@ -195,7 +205,7 @@ html .ui-filterable.ui-listview {
 }
 
 #map {
-    height: 200px;
+    height: 400px;
     background: white;
 }
 
@@ -285,7 +295,7 @@ p {
 }
 
 .disclaimer {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 0.80em;
 }
 

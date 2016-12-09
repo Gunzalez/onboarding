@@ -72,8 +72,8 @@
 
             <div class="disclaimer">
                 <h4>Disclaimer</h4>
-                <p>This is a prototype, no access details needed (just press NEXT), no details are saved, all names and content are random, some buttons don't work, some screens don't have content, everything is grey... but we think you'll get the idea.</p>
-                <p>Add this to your homescreen for app like experience. <br /><a href="http://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/" target="_blank" title="opens in another tab">how to add to homescreen</a>.</p>
+                <p>This is a prototype, no access details required, no details are saved, all names and content are random, some buttons don't work, some screens don't have content, everything is grey... but we think you'll get the idea.</p>
+                <p>Add to your homescreen for a more app like experience. <br /><a href="http://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/" target="_blank" title="opens in another tab">how to add to homescreen</a>.</p>
             </div>
 
         </form>
@@ -334,15 +334,17 @@
            class="ui-btn-right ui-naked-btn ui-btn ui-btn-icon-right ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Menu</a>
     </div>
 
-    <div class="photo">
-        <div class="image">
-            <span class="image-placeholder"></span>
+    <div class="photo compound">
+        <div class="box">
+            <div class="image">
+                <span class="image-placeholder"></span>
+            </div>
+            <div class="role">
+                <h3 class="personName">Valtech staff</h3>
+                <p class="personTitle">Technical Architect</p>
+            </div>
+            <div class="cleft"></div>
         </div>
-        <div class="role">
-            <h3 class="personName">Valtech staff</h3>
-            <p class="personTitle">Technical Architect</p>
-        </div>
-        <div class="cleft"></div>
     </div>
 
     <div role="main" class="ui-content main-content">
@@ -395,10 +397,10 @@
 
         </div>
 
-        <div class="intro">
-            <p>Valtech contact card<br />
-                <a href="#" class="ui-btn ui-btn-inline">Valtech CV</a></p>
-        </div>
+        <!--<div class="intro">-->
+            <!--<p>Valtech contact card<br />-->
+                <!--<a href="#" class="ui-btn ui-btn-inline">Valtech CV</a></p>-->
+        <!--</div>-->
 
 
     </div>
@@ -435,10 +437,6 @@
     </div>
     <div role="main" class="ui-content main-content">
         <div class="bios">
-            <div class="bio">
-                <p>Hi, my name is <span class="personName">Slim Shady</span>, I'm such a super, great amazing person. I am kind, generous and honest. I love pets, I recycle and I have many Facebook friends. Also the force is strong with me.</p>
-                <p>My greatest personality trait is modesty, I am the most modest person I know.</p>
-            </div>
             <div class="bio centered">
                 <p>P-P-A-P</p>
                 <p>I have a pen, I have an apple<br />
@@ -450,7 +448,9 @@
                     Pen-Pineapple-Apple-Pen</p>
             </div>
             <div class="bio">
-                <p>When lava pours out near the sea surface, tremendous volcanic explosions sometimes occur. In time, submarine sea-mounts or islands are formed. When lava flows underwater, it behaves differently.</p>
+                <p class="placeHolderText">
+                    {{  probably some bio }}
+                </p>
             </div>
         </div>
     </div>
@@ -460,13 +460,13 @@
         <div data-role="navbar">
             <ul>
                 <li>
-                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-user ui-btn-icon-top">
+                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-user ui-btn-icon-top ui-state-persist">
                         <span>Biography</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-location ui-btn-icon-top">
-                        <span>Location</span>
+                        <span>Based at</span>
                     </a>
                 </li>
                 <li>
@@ -529,8 +529,8 @@
             </li>
             <li>
                 <a href="#active-directory" class="ui-nodisc-icon ui-alt-icon">
-                    <h3>Active Directory / Intranet</h3>
-                    <span>Valtech AD access...</span>
+                    <h3>Active Directory</h3>
+                    <span>Valtech AD access, Intranet...</span>
                 </a>
             </li>
             <li>
@@ -542,7 +542,7 @@
             <li>
                 <a href="#location" class="ui-nodisc-icon ui-alt-icon">
                     <h3>Valtech Communications</h3>
-                    <span>Slack, Skype, Confluence</span>
+                    <span>Slack, Skype, Confluence...</span>
                 </a>
             </li>
         </ul>
@@ -582,7 +582,7 @@
     </div>
 
     <div role="main" class="ui-content main-content">
-        <h2 class="page-title">Active Directory / Intranet</h2>
+        <h2 class="page-title">Active Directory</h2>
         <div class="intro">
             <p>Aliquam suscipit ante tincidunt porttitor sagittis. Aliquam erat volutpat. Nulla sagittis orci ut neque porttitor volutpat.</p>
         </div>
@@ -768,16 +768,16 @@
     </div>
 
     <div role="main" class="ui-content main-content">
-        <h2 class="page-title">What and why</h2>
+        <h2 class="page-title">What is this?</h2>
 
         <div class="intro">
-            <p>Brought to you by Chris, Tizzy, Segun and supporting cast Andrea.</p>
+            <p>Brought to you by Chris, Tizzy, Segun and supporting cast <span title="He didn't do a damn thing actually lol">Andrea</span>.</p>
         </div>
 
         <div class="long-copy">
 
             <h4>Purpose</h4>
-            <p>The initial intention was for a helpful tool to aid new joiners, to guide their way around Valtech, preferably mobile based.</p>
+            <p>The initial intention was for a helpful tool to aid new joiners, to guide their first steps around Valtech, preferably mobile based.</p>
 
             <h4>Content</h4>
             <p>This prototype will help determine what content goes in, the target audience - just new joiners or everyone, data access levels, privacy, if we need a dedicated CMS and such and such.</p>
@@ -786,7 +786,7 @@
             <p>Currently this is a web app, but we hope it helps you visualise and decide on whether to keep it as web app, or build an iOS version, or maybe scrap it all together due to lack of resources.</p>
 
             <h4>Feedback</h4>
-            <p>This is just the very start and we need your input to make it work for everyone. Suggestions, questions, LOLs, flowers, please send them all to <a href="mailto:tizzy.jones@valtech.co.uk">tizzy.jones@valtech.co.uk</a>.</p>
+            <p>This is just a start, we would like your input to make the idea work for everyone. Suggestions, questions, flowers, P45s... please send them all to <a href="mailto:tizzy.jones@valtech.co.uk">tizzy.jones@valtech.co.uk</a>.</p>
 
         </div>
 
@@ -826,7 +826,7 @@
     <div class="map" id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.798923819088!2d-0.10397744842772184!3d51.535247779539816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b568fb8755d%3A0xb42a1f6ca7cbc11!2sValtech+UK!5e0!3m2!1sen!2suk!4v1481218070851"
                 width="100%"
-                height="200"
+                height="400"
                 frameborder="0"
                 style="border:0" allowfullscreen></iframe>
     </div>
@@ -853,7 +853,7 @@
         <div data-role="navbar">
             <ul>
                 <li>
-                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-navigation ui-btn-icon-top">
+                    <a href="#" class="ui-btn ui-btn-inline ui-nodisc-icon ui-alt-icon ui-icon-navigation ui-btn-icon-top ui-state-persist">
                         <span>Directions</span>
                     </a>
                 </li>
