@@ -32,6 +32,13 @@
             $.mobile.navigate(destination);
         });
 
+
+        var $refreshButtons = $('.page-refresh');
+        $refreshButtons.on('click', function(evt){
+            evt.preventDefault();
+            location.reload(); // For standalone browsers
+        });
+
         var $signInForm = $('#sign-in-form');
         $signInForm.on('submit', function(){
             // do some ajax to log user in
@@ -40,6 +47,8 @@
             $.mobile.navigate(destination);
             return false;
         });
+
+
 
         var $nameLinks = $('#aListOfNames').find('a');
         $nameLinks.on('click', function(evt){
@@ -224,7 +233,6 @@
         // just some fun
         onboarding.fun.switchBios();
     });
-
 
     $(document).on("pagebeforeshow", "#person2", function(){
 
